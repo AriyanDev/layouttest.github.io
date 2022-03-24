@@ -13,35 +13,52 @@ header, .c1, .c2{
     padding: 2rem 0rem;
     color: white;
 }
+
+.content{
+    float: left;
+    /* width: calc(66% - 1rem);
+    margin-right: 1rem; */
+    width: 100%;
+    margin-bottom: 1rem;
+}
+@media(min-width: 768px){
+    .content{
+        width: calc(66% - 1rem);
+        margin-right: 1rem;
+    }
+}
+
+
 .content .box{
     margin: 0.5rem;
     background-color: rgb(141, 44, 133);
     height: 200px;
     float: left;
-    width: calc(33.33% - 1rem);
-}
-.content{
-    float: left;
-    width: calc(66% - 1rem);
-    margin-right: 1rem;
+    /* width: calc(33.33% - 1rem); */
+    width: calc(100% - 1rem);
 }
 .sidebar{
     float: left;
-    width: 34%;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 .about{
     margin-left: 1rem;
     background-color: rgb(22, 139, 175);
     height: 200px;
     float: right;
-    width: calc(33.33% - 0.25rem);
+    /* width: calc(33.33% - 0.25rem); */
+    width: 100%;
+    margin-bottom: 1rem;
 }
 .contact{
     margin-right: 0.5rem;
     background-color: rgb(81, 44, 141);
     height: 200px;
     float: left;
-    width: calc(66% - 1rem);
+    /* width: calc(66% - 1rem); */
+    width: 100%;
+    margin-bottom: 1rem;
 }
   
 .clearfix:after,
