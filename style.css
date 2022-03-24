@@ -1,9 +1,9 @@
 html{
     font-size: 100%;
 }
-body{
+/* body{
     background: url("./bgw1.jpg") fixed 0 40%/cover; 
-}
+} */
 header, .c1, .c2{
     margin-bottom: 1.2rem;
 }
@@ -33,7 +33,7 @@ header, .c1, .c2{
     height: 200px;
     float: left;
     width: calc(100% - 1rem);
-    overflow: auto;
+    overflow : auto;
 }
 /* @media(min-width: 768px){
     .content .box{
@@ -110,4 +110,10 @@ header, .c1, .c2{
         width: calc(66% - 1rem);
      }
 
+}
+
+@media (min-width: 500px) and (orientation : landscape){
+    body {
+        background-color: deeppink;
+    }
 }
