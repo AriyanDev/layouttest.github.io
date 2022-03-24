@@ -1,36 +1,54 @@
-.header {
-    width: 100vw;
-    background: url(./bgw1.jpg) fixed 0 40%/cover; 
-    height: 3456px;
-     height: 100vh;
-    box-sizing: border-box;
-    padding: 20px; 
-    /* border: 50px; */
-    /* filter: drop-shadow(10px 0 0 red); */
-    /* filter: blur(10px); */
-     font-family: 'Vazir'; 
-     font-size: 16px;
-    
-} 
-
-
- html{
-    font-family: "Vazir";
+html{
     font-size: 100%;
-} 
-
+}
 body{
-    padding-top: 10px;
+    background: url("./bgw1.jpg") fixed 0 40%/cover; 
 }
-
-.lay{
-    background-color: dodgerblue;
-    color: black;
-    padding: 1.2rem 2rem;
-    border-radius: 6px;
+header, .c1, .c2{
+    margin-bottom: 1.2rem;
+}
+.section{
+    background-color: rgb(56, 157, 170);
     text-align: center;
-
+    padding: 2rem 0rem;
+    color: white;
 }
-header,section,aside,footer{
-    margin: 0 1.5rem 2rem;
+.content .box{
+    margin: 0.5rem;
+    background-color: rgb(141, 44, 133);
+    height: 200px;
+    float: left;
+    width: calc(33.33% - 1rem);
+}
+.content{
+    float: left;
+    width: calc(66% - 1rem);
+    margin-right: 1rem;
+}
+.sidebar{
+    float: left;
+    width: 34%;
+}
+.about{
+    margin-left: 1rem;
+    background-color: rgb(22, 139, 175);
+    height: 200px;
+    float: right;
+    width: calc(33.33% - 0.25rem);
+}
+.contact{
+    margin-right: 0.5rem;
+    background-color: rgb(81, 44, 141);
+    height: 200px;
+    float: left;
+    width: calc(66% - 1rem);
+}
+  
+.clearfix:after,
+.clearfix:before{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
 }
