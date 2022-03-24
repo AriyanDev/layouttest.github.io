@@ -19,12 +19,12 @@ header, .c1, .c2{
     margin-bottom: 1rem;
     display: inline-block;
 }
-@media(min-width: 768px){
+/* @media(min-width: 768px){
     .content{
         width: calc(66% - 1rem);
         margin-right: 1rem;
     }
-}
+} */
 
 
 .content .box{
@@ -34,11 +34,11 @@ header, .c1, .c2{
     float: left;
     width: calc(100% - 1rem);
 }
-@media(min-width: 768px){
+/* @media(min-width: 768px){
     .content .box{
         width: calc(33.33% - 1rem);
     }
-}
+} */
 .sidebar{
     width: 100%;
     margin-bottom: 1rem;
@@ -46,12 +46,11 @@ header, .c1, .c2{
     vertical-align:top;
 }
 
-@media(min-width: 768px){
+/* @media(min-width: 768px){
     .sidebar{
         width: 33.33%;
-        /* margin-right: 1rem; */
     }
-}
+} */
 .about{
     margin-left: 1rem;
     background-color: rgb(22, 139, 175);
@@ -61,11 +60,11 @@ header, .c1, .c2{
     width: 100%;
     margin-bottom: 1rem;
 }
-@media(min-width: 768px){
+/* @media(min-width: 768px){
     .about{
         width: calc(33.33% - 0.25rem);
     }
-}
+} */
 .contact{
     margin-right: 0.5rem;
     background-color: rgb(81, 44, 141);
@@ -75,11 +74,11 @@ header, .c1, .c2{
     width: 100%;
     margin-bottom: 1rem;
 }
-@media(min-width: 768px){
+/* @media(min-width: 768px){
     .contact{
        width: calc(66% - 1rem);
     }
-}
+} */
   
 .clearfix:after,
 .clearfix:before{
@@ -88,4 +87,25 @@ header, .c1, .c2{
 }
 .clearfix:after{
     clear: both;
+}
+
+@media(min-width: 768px){
+    .content{
+        width: calc(66% - 1rem);
+        margin-right: 1rem;
+    }
+    .content .box{
+        width: calc(33.33% - 1rem);
+    }
+    .sidebar{
+        width: 33.33%;
+        /* margin-right: 1rem; */
+    }
+    .about{
+        width: calc(33.33% - 0.25rem);
+    }
+    .contact{
+        width: calc(66% - 1rem);
+     }
+
 }
