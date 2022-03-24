@@ -1,0 +1,36 @@
+.header {
+    width: 100vw;
+    background: url(./bgw1.jpg) fixed 0 40%/cover; 
+    height: 3456px;
+     height: 100vh;
+    box-sizing: border-box;
+    padding: 20px; 
+    /* border: 50px; */
+    /* filter: drop-shadow(10px 0 0 red); */
+    /* filter: blur(10px); */
+     font-family: 'Vazir'; 
+     font-size: 16px;
+    
+} 
+
+
+ html{
+    font-family: "Vazir";
+    font-size: 100%;
+} 
+
+body{
+    padding-top: 10px;
+}
+
+.lay{
+    background-color: dodgerblue;
+    color: black;
+    padding: 1.2rem 2rem;
+    border-radius: 6px;
+    text-align: center;
+
+}
+header,section,aside,footer{
+    margin: 0 1.5rem 2rem;
+}
