@@ -99,7 +99,8 @@ header, .c1, .c2{
         width: calc(33.33% - 1rem);
     }
     .sidebar{
-        width: 33.33%;
+        width : calc(33.33% - 0.25rem);
+        /* width: 33.33%; */
         /* margin-right: 1rem; */
     }
     .about{
