@@ -33,6 +33,7 @@ header, .c1, .c2{
     height: 200px;
     float: left;
     width: calc(100% - 1rem);
+    overflow: Auto;
 }
 /* @media(min-width: 768px){
     .content .box{
