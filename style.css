@@ -31,6 +31,8 @@ html{
     transition-timing-function: ease-in , ease-out; */
     /* transition: transform 3s ease-in , border 6s ease-out ; */
     transition: all 2s cubic-bezier(0.36, 0, 0.66, -0.56);   /*cubic-bezier(0.6, -0.28, 0.74, 0.05); */ /* website: https://easings.net    */
+    animation: cuberotate 3s ease-in 2s infinite alternate;
+
 }
 
 .cube:hover{
@@ -67,7 +69,14 @@ html{
 .cube__face--top{transform: rotatex(90deg) translatez(100px);}
 .cube__face--bottom{transform: rotatex(-90deg) translatez(100px);}
 
-
+@keyframes cuberotate{
+    from{
+        transform: rotatey(0) scale(1);
+    }
+    to{
+        transform: rotatey(360deg) scale(1.5);
+    }
+}
 /* body{
     background: url("./bgw1.jpg") fixed 0 40%/cover; 
 } */
