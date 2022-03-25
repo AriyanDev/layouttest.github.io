@@ -26,13 +26,16 @@ html{
     height: 100%;
     transform-style: preserve-3d;
     transform: rotatey(0);
-    transition-property: transform;
-    transition-duration: 5s;
-    transition-timing-function: ease-in;
+    /* transition-property: transform , border;
+    transition-duration: 5s , 6s;
+    transition-timing-function: ease-in , ease-out; */
+    /* transition: transform 3s ease-in , border 6s ease-out ; */
+    transition: all 2s cubic-bezier(0.36, 0, 0.66, -0.56);   /*cubic-bezier(0.6, -0.28, 0.74, 0.05); */ /* website: https://easings.net    */
 }
+
 .cube:hover{
-    transform: rotatey(270deg);
-    
+    transform: rotatey(200deg);
+    border: 1.5rem black solid;
 }
 .cube__face{
     position: absolute;
