@@ -1,12 +1,66 @@
 html{
     font-size: 100%;
 }
+.c1, .c2{
+    
+    margin-bottom: 1.2rem;
+}
+.section__header{
+    background-color: rgb(56, 157, 170);
+    text-align: center;
+    padding: 10rem 0rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.container{
+    perspective: 600px;
+    width: 200px;
+    height: 200px;
+    margin-left: 20rem;
+}
+.cube{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotatex(35deg);
+}
+.cube__face{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black; 
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* .cube__face--bottom{
+    margin-bottom: 1rem;
+} */
+.cube__face--front{background-color: rgba(255, 0, 0, 0.7);}
+.cube__face--back{background-color: rgba(0, 255, 0, 0.7);}
+.cube__face--right{background-color: rgba(0, 0, 255, 0.7);}
+.cube__face--left{background-color: rgba(255, 255, 0, 0.7);}
+.cube__face--top{background-color: rgba(255, 0, 255, 0.7);}
+.cube__face--bottom{background-color: rgba(0, 255, 255, 0.7);}
+
+.cube__face--front{transform: rotatey(0) translatez(100px);}
+.cube__face--back{transform: rotatey(180deg) translatez(100px);}
+.cube__face--right{transform: rotatey(90deg) translatez(100px);}
+.cube__face--left{transform: rotatey(-90deg) translatez(100px);}
+.cube__face--top{transform: rotatex(90deg) translatez(100px);}
+.cube__face--bottom{transform: rotatex(-90deg) translatez(100px);}
+
+
 /* body{
     background: url("./bgw1.jpg") fixed 0 40%/cover; 
 } */
-header, .c1, .c2{
-    margin-bottom: 1.2rem;
-}
+
 .section{
     background-color: rgb(56, 157, 170);
     text-align: center;
@@ -19,12 +73,7 @@ header, .c1, .c2{
     margin-bottom: 1rem;
     display: inline-block;
 }
-/* @media(min-width: 768px){
-    .content{
-        width: calc(66% - 1rem);
-        margin-right: 1rem;
-    }
-} */
+
 
 
 .content .box{
@@ -35,11 +84,7 @@ header, .c1, .c2{
     width: calc(100% - 1rem);
     overflow : auto;
 }
-/* @media(min-width: 768px){
-    .content .box{
-        width: calc(33.33% - 1rem);
-    }
-} */
+
 .sidebar{
     width: 100%;
     margin-bottom: 1rem;
@@ -47,11 +92,7 @@ header, .c1, .c2{
     vertical-align:top;
 }
 
-/* @media(min-width: 768px){
-    .sidebar{
-        width: 33.33%;
-    }
-} */
+
 .about{
     margin-left: 1rem;
     background-color: rgb(22, 139, 175);
@@ -61,11 +102,7 @@ header, .c1, .c2{
     width: 100%;
     margin-bottom: 1rem;
 }
-/* @media(min-width: 768px){
-    .about{
-        width: calc(33.33% - 0.25rem);
-    }
-} */
+
 .contact{
     margin-right: 0.5rem;
     background-color: rgb(81, 44, 141);
@@ -75,11 +112,7 @@ header, .c1, .c2{
     width: 100%;
     margin-bottom: 1rem;
 }
-/* @media(min-width: 768px){
-    .contact{
-       width: calc(66% - 1rem);
-    }
-} */
+
   
 .clearfix:after,
 .clearfix:before{
@@ -90,7 +123,7 @@ header, .c1, .c2{
     clear: both;
 }
 
-@media(min-width: 500px){
+@media(min-width: 768px){
     .content{
         width: calc(66% - 1rem);
         margin-right: 1rem;
@@ -111,8 +144,19 @@ header, .c1, .c2{
      }
 
 }
+/*  48 rem = 768/16   */
+/* @media (min-width: 48rem) and (orientation : landscape){    
+    body {
+        background-color: deeppink;
+    }
+} */
 
-@media (min-width: 500px) and (orientation : landscape){
+/* @media (min-width: 38rem){    
+    body {
+        background-color: blue;
+    }
+} */
+@media (min-width: 48rem) , (max-width: 38rem){    
     body {
         background-color: deeppink;
     }
